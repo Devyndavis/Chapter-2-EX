@@ -1,15 +1,15 @@
-// This program calculates and displays the discounted value of an item.
+// This program calculates and displays several values
+// and various percentages for those values.
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    double originalPrice = 50.0;
-    double discountRate = 0.2; // 20% discount
-    double discountAmount = originalPrice * discountRate;
-    double finalPrice = originalPrice - discountAmount;
+    int total = 100;
+    int part = 20;
+    double percentage = (static_cast<double>(part) / total) * 100;
 
-    cout << "The final price after discount is: $" << finalPrice << endl;
+    cout << "The percentage is: " << percentage << "%" << endl;
 
     return 0;
 }
